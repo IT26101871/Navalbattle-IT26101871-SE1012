@@ -1,10 +1,26 @@
 #include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+struct Escort
+{
+   int id;
+   int x;
+   int y;
+   int type;
+};
+
 int main()
 {
 	int choice;
 	int battleshipY;
 	int battleshipX;
 	int battlefieldSize;
+        int numberOfShips;
+        int i;
+        
+        struct Escort ships[20];
+        srand(time(NULL));
 
 	do
 	{
@@ -30,16 +46,41 @@ int main()
 	  
 	  printf("Enter Battleship Y position : ");
          scanf("%d", &battleshipY);
+         printf("Enter number of Escort Ships: ");
+         scanf("%d", &numberOfShips);
+
+        for(i=0; i<numberOfShips; i++)
+{ 
+ships[i].id = i+1;
+ships[i].x = rand() % battlefieldSize;
+ships[i].y = rand() % battlefieldSize;
+ships[i].type = rand() % 5+1;
+}
+
+
 
 	  printf("\nBattlefield created.\n");
 	  printf("Battlefield size:%dx %d\n",battlefieldSize,battlefieldSize );
 	   printf("Battleship position:(%d,%d)\n",battleshipX, battleshipY);
-	}
+	   printf("\n---Escort Ships---\n");
+for(i=0; i<numberOfShips; i++)
+{
+       printf("E%d: Position(%d,%d) Type: E%d\n", 
+           ships[i].id,
+           ships[i].x,
+           ships[i].y,
+           ships[i].type);
+ }
+ }
+
 		   else if (choice == 2)
 		   {
 	    printf("\n---Instructions---\n");
-	    printf("The Battleship (B) attacks Escort Ships (E).\n"); printf("The objective is to destroy as many Escort Ships as possible.\n");
-		   }
+	    printf("The Battleship (B) attacks Escort Ships (E).\n");
+            printf("The objective is to destroy as many Escort Ships as possible.\n");
+            printf("Escort Ships are placed randomly on the battlefield.\n");
+}
+
 		    else if(choice == 3)
 	    
 		    {
@@ -60,3 +101,4 @@ int main()
 }
          
          	
+
