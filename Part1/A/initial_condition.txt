@@ -1,0 +1,5 @@
+Battlefield Size: 10\nBattleship: X=5 Y=5 Type=3 V=7
+Number of Escort Ships: 3
+E1: X=1 Y=9 Type=5 V=5 Angle=72
+E2: X=4 Y=3 Type=5 V=1 Angle=195
+E3: X=3 Y=1 Type=3 V=5 Angle=105
