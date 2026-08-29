@@ -1,0 +1,2 @@
+Battlefield Size: 10
+Battleship Position: 5 5
