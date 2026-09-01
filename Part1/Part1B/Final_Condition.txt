@@ -1,0 +1,6 @@
+Battle Time: 101 seconds
+:Hits by B: 0
+B Sunk: No
+E1: Alive=1
+E2: Alive=1
+E3: Alive=1
