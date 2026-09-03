@@ -1,6 +1,6 @@
-Battle Time: 101 seconds
-:Hits by B: 1
-B Sunk: No
-E1: Alive=1
-E2: Alive=0
-E3: Alive=1
+Battleship Status: SURVIVED
+Battle Time: 0.40 seconds
+Hits by B: 3
+Escort 1 Status: Destroyed
+Escort 2 Status: Destroyed
+Escort 3 Status: Destroyed

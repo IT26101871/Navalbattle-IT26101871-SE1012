@@ -1,2 +1,3 @@
-Battlefield Size: 10
-Battleship Position: 5 5
+Escort Index: 1, Distance: 39.70 m, TimeToHit: 0.40 s, Status: Hit
+Escort Index: 2, Distance: 38.33 m, TimeToHit: 0.38 s, Status: Hit
+Escort Index: 3, Distance: 38.48 m, TimeToHit: 0.38 s, Status: Hit
