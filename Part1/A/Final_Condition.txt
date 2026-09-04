@@ -1,6 +1,0 @@
-Battleship Status: SURVIVED
-Battle Time: 0.40 seconds
-Hits by B: 3
-Escort 1 Status: Destroyed
-Escort 2 Status: Destroyed
-Escort 3 Status: Destroyed
