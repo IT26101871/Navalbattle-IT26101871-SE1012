@@ -1,0 +1,6 @@
+=== INITIAL CONDITIONS ===
+Battleship: MS King George V | Pos: (0.46, 9.93) | Vmax: 91.21
+E[1] EC | Pos: (0.80, 1.48)
+E[2] ED | Pos: (8.94, 0.16)
+E[3] EB | Pos: (2.56, 3.63)
+E[4] ED | Pos: (4.61, 4.51)
