@@ -1,14 +1,45 @@
 Seed: 3
-Canvas Size (D): 4
+Canvas Size (D): 3
 Escort Fleet Size (N): 45
-Total Waypoints (k): 4
-Gun Jam Iteration (t): 2
-Min Jam Angle (thetaMin): 24 deg
-Battleship: R (Richelieu)
+Total Waypoints (k): 35
+Gun Jam Iteration (t): 23
+Min Jam Angle (thetaMin): 23 deg
+Battleship: &|å>¢	¯=‡Å8?mïú=˛ˆƒ?à@/?‘lŒ?
 Calculated Vmax_B: 133.68 m/s
 
 --- AUTO-GENERATED WAYPOINTS ---
-  Waypoint 01 : (0.90, 1.57)
-  Waypoint 02 : (1.78, 1.14)
-  Waypoint 03 : (0.58, 2.25)
-  Waypoint 04 : (3.46, 3.58)
+  Waypoint 01 : (0.67, 0.74)
+  Waypoint 02 : (1.33, 0.55)
+  Waypoint 03 : (0.43, 1.83)
+  Waypoint 04 : (2.59, 2.65)
+  Waypoint 05 : (0.69, 0.21)
+  Waypoint 06 : (1.38, 0.12)
+  Waypoint 07 : (1.88, 1.16)
+  Waypoint 08 : (2.54, 1.71)
+  Waypoint 09 : (0.77, 0.51)
+  Waypoint 10 : (1.33, 1.42)
+  Waypoint 11 : (1.10, 2.59)
+  Waypoint 12 : (1.69, 0.40)
+  Waypoint 13 : (2.64, 1.36)
+  Waypoint 14 : (1.56, 1.00)
+  Waypoint 15 : (2.61, 2.27)
+  Waypoint 16 : (2.30, 0.28)
+  Waypoint 17 : (0.49, 0.64)
+  Waypoint 18 : (1.14, 0.93)
+  Waypoint 19 : (2.33, 0.73)
+  Waypoint 20 : (0.61, 0.02)
+  Waypoint 21 : (0.74, 1.99)
+  Waypoint 22 : (0.55, 2.62)
+  Waypoint 23 : (1.83, 0.09)
+  Waypoint 24 : (2.65, 2.60)
+  Waypoint 25 : (0.21, 0.98)
+  Waypoint 26 : (0.12, 1.31)
+  Waypoint 27 : (1.16, 1.81)
+  Waypoint 28 : (1.71, 0.80)
+  Waypoint 29 : (0.51, 0.27)
+  Waypoint 30 : (1.42, 0.12)
+  Waypoint 31 : (2.59, 0.72)
+  Waypoint 32 : (0.40, 0.08)
+  Waypoint 33 : (1.36, 1.54)
+  Waypoint 34 : (1.00, 0.68)
+  Waypoint 35 : (2.27, 1.61)

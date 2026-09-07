@@ -85,6 +85,9 @@ printf("\n[SIMULATION PARAMETERS]\n");
         fprintf(f_init, "\n--- AUTO-GENERATED WAYPOINTS ---\n");
     }
 
+    
+
+
     printf("[WAYPOINT ROUTE GENERATION]\n");
     for (int i = 0; i < k; i++) {
         printf("  # Waypoint %02d : (%.2f, %.2f)\n", i + 1, path_x[i], path_y[i]);
@@ -92,16 +95,34 @@ printf("\n[SIMULATION PARAMETERS]\n");
             fprintf(f_init, "  Waypoint %02d : (%.2f, %.2f)\n", i + 1, path_x[i], path_y[i]);
         }
     }
-    if (f_init != NULL) fclose(f_init);
+   if (f_init != NULL) fclose(f_init);
     printf("\n");
 
 printf("[EVENT LOGS & OUTCOME]\n");
 
+int sunk_step = -1;
+int killer_escort = -1;
+
     FILE *f_stats = fopen("Simulation_Statistics.txt", "w");
     FILE *f_final = fopen("Final_Conditions.txt", "w");
 
-    int sunk_step = -1;
-    int killer_escort = -1;
+   if (f_final != NULL) {
+    fprintf(f_final, "Status: ELIMINATED\n");
+    fprintf(f_final, "Final Step: %d\n", sunk_step);
+    fprintf(f_final, "Eliminated By: Escort E[%d] (EA)\n", killer_escort);
+    fprintf(f_final, "Sunk Location: (%.2f, %.2f)\n",
+            path_x[sunk_step - 1], path_y[sunk_step - 1]);
+    fclose(f_final);
+}
+
+    if (f_final != NULL) {
+    fprintf(f_final, "Status: ELIMINATED\n");
+    fprintf(f_final, "Final Step: %d\n", sunk_step);
+    fprintf(f_final, "Eliminated By: Escort E[%d] (EA)\n", killer_escort);
+    fprintf(f_final, "Sunk Location: (%.2f, %.2f)\n",
+            path_x[sunk_step - 1], path_y[sunk_step - 1]);
+    fclose(f_final);
+}
 for (int step = 1; step <= k; step++) {
         float bx = path_x[step - 1];
         float by = path_y[step - 1];
