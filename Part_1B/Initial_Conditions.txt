@@ -1,7 +1,0 @@
-=== INITIAL CONDITIONS (Part 1-B) ===
-Seed: 0
-Canvas Size (D): 4
-Escort Ships (N): 45
-Path Points (k): 10
-Selected Vessel: R (Richelieu)
-Calculated Vmax_B: 155.15 m/s

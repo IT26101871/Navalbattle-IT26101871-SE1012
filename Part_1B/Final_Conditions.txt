@@ -1,4 +1,0 @@
-=== FINAL CONDITIONS (Part 1-B) ===
-Status: SUNK
-Sunk Location: (8.10, 0.89)
-Sunk at Step: 1
