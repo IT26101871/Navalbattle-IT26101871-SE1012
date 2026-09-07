@@ -1,7 +1,14 @@
-=== INITIAL CONDITIONS (Part 1-B) ===
 Seed: 3
-Canvas Size (D): 11
-Escort Ships (N): 25
-Path Points (k): 16
-Selected Vessel: R (Richelieu)
-Calculated Vmax_B: 155.15 m/s
+Canvas Size (D): 4
+Escort Fleet Size (N): 45
+Total Waypoints (k): 4
+Gun Jam Iteration (t): 2
+Min Jam Angle (thetaMin): 24 deg
+Battleship: R (Richelieu)
+Calculated Vmax_B: 133.68 m/s
+
+--- AUTO-GENERATED WAYPOINTS ---
+  Waypoint 01 : (0.90, 1.57)
+  Waypoint 02 : (1.78, 1.14)
+  Waypoint 03 : (0.58, 2.25)
+  Waypoint 04 : (3.46, 3.58)
