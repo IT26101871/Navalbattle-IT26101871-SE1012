@@ -106,6 +106,21 @@ int killer_escort = -1;
     FILE *f_stats = fopen("Simulation_Statistics.txt", "w");
     FILE *f_final = fopen("Final_Conditions.txt", "w");
 
+if (f_stats == NULL) {
+    printf("ERROR: Could not create Simulation_Statistics.txt\n");
+} else {
+    fprintf(f_stats, "===== SIMULATION STATISTICS =====\n");
+    fprintf(f_stats, "Random Seed: %d\n", seed);
+    fprintf(f_stats, "Canvas Size: %d\n", D);
+    fprintf(f_stats, "Escort Fleet Size: %d\n", N);
+    fprintf(f_stats, "Waypoints: %d\n", k);
+    fprintf(f_stats, "Gun Jam Iteration: %d\n", t);
+    fprintf(f_stats, "Minimum Jam Angle: %d degrees\n", thetaMin);
+    fprintf(f_stats, "Battleship: %s\n", shipName);
+    fprintf(f_stats, "Calculated Vmax_B: %.2f m/s\n\n", calculated_vmax);
+}
+
+
    if (f_final != NULL) {
     fprintf(f_final, "Status: ELIMINATED\n");
     fprintf(f_final, "Final Step: %d\n", sunk_step);

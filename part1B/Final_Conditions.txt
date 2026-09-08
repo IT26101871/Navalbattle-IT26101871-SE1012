@@ -1,4 +1,4 @@
-Status: ELIMINATED
-Final Step: -1
-Eliminated By: Escort E[-1] (EA)
-Sunk Location: (-602015601556193280.00, 2.33)
+=== FINAL CONDITIONS (Part 1-B) ===
+Status: SUNK
+Sunk Location: (8.10, 0.89)
+Sunk at Step: 1
