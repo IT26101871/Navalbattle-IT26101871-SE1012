@@ -1,0 +1,4 @@
+FINAL CONDITIONS
+Battleship Status: ALIVE
+Final Health: 72.0%
+Escort Ships Destroyed: 4 of 4

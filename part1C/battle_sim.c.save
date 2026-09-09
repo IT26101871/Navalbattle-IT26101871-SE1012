@@ -1,0 +1,144 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <time.h>
+
+#define MAX_ESCORTS 20
+#define MAX_POINTS 20
+
+typedef struct {
+    int id;
+    char type[3];
+    double x;
+    double y;
+    int alive;
+} Escort;
+
+typedef struct {
+    double x;
+    double y;
+} Point;_double distanceBetween(double x1, double y1, double x2, double y2)
+{
+    double dx = x2 - x1;
+    double dy = y2 - y1;
+
+    return sqrt(dx * dx + dy * dy);
+}
+double responseTime(double distance)
+{
+    return 0.25 + (distance * 0.15);
+}
+void generateEscortType(Escort *escort)
+{
+    int r = rand() % 3;
+
+    if (r == 0)
+        sprintf(escort->type, "ED");
+    else if (r == 1)
+        sprintf(escort->type, "FF");
+    else
+        sprintf(escort->type, "DD");
+}
+
+void saveInitialConditions(
+    int seed,
+    int canvasSize,
+    int escortCount,
+    int routeCount,
+    char battleshipType,
+    double vmax,
+    Escort escorts[],
+    Point route[]
+)
+)
+{
+    FILE *fp = fopen("Initial_Conditions.txt", "w");
+
+    if (fp == NULL)
+    {
+        printf("Error creating Initial_Conditions.txt\n");
+        return;
+    }
+
+    fprintf(fp, "NAVAL BATTLE SIMULATOR\n");
+    fprintf(fp, "======================\n\n");
+
+    fprintf(fp, "Random Seed     : %d\n", seed);
+    fprintf(fp, "Canvas Size     : %d x %d\n", canvasSize, canvasSize);
+    fprintf(fp, "Escort Fleet    : %d ships\n", escortCount);
+    fprintf(fp, "Route Points    : %d\n\n", routeCount);
+  fprintf(fp, "Battleship\n");
+    fprintf(fp, "Type            : %c\n", battleshipType);
+    fprintf(fp, "Vmax            : %.2f m/s\n\n", vmax);
+
+    fprintf(fp, "ESCORT SHIPS\n");
+    fprintf(fp, "------------\n");
+
+    for (int i = 0; i < escortCount; i++)
+    {
+        fprintf(fp,
+                "E[%d]  Type: %s  Position: (%.2f, %.2f)\n",
+                escorts[i].id,
+                escorts[i].type,
+              escorts[i].x,
+                escorts[i].y);
+    }
+
+    fprintf(fp, "\nROUTE POINTS\n");
+    fprintf(fp, "------------\n");
+
+    for (int i = 0; i < routeCount; i++)
+    {
+        fprintf(fp,
+                "Point %d : (%.2f, %.2f)\n",
+                i + 1,
+                route[i].x,
+                route[i].y);
+    }    fclose(fp);
+}
+void saveStatistics(
+    int seed,
+    int canvasSize,
+    int escortCount,
+    int routeCount,
+    char battleshipType,
+    double vmax,
+    Point route[],
+    double health[],
+    double locationsX[],
+    double locationsY[],
+    int attackStep
+)
+{
+    FILE *fp = fopen("Simulation_Statistics.txt", "w");
+
+    if (fp == NULL)
+    {
+    printf("Error creating Simulation_Statistics.txt\n");
+        return;
+    }
+
+    fprintf(fp, "=============================================\n");
+    fprintf(fp, "          SIMULATION STATISTICS\n");
+    fprintf(fp, "=============================================\n\n");
+
+    fprintf(fp, "Random Seed    : %d\n", seed);
+    fprintf(fp, "Canvas Size    : %d x %d\n", canvasSize, canvasSize);
+    fprintf(fp, "Escort Fleet   : %d ships\n", escortCount);
+    fprintf(fp, "Route Points   : %d\n", routeCount);
+    fprintf(fp, "Battleship     : %c\n", battleshipType);
+    fprintf(fp, "Vmax           : %.2f m/s\n\n", vmax);
+
+    for (int i = 0; i < routeCount; i++)
+    {
+        fprintf(fp, "Step %d\n", i + 1);
+        fprintf(fp,
+                "Battleship Location : (%.2f, %.2f)\n",
+                locationsX[i],
+     locationsY[i]);
+
+        fprintf(fp, "Health              : %.1f%%\n",
+                health[i]);
+
+        if (i == attackStep)
+   

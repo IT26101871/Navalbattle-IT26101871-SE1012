@@ -1,0 +1,11 @@
+INITIAL CONDITIONS
+Random Seed: 2
+Canvas Size: 10x10
+Route Points: 5
+Battleship: USS Iowa (U), Vmax: 155.15 m/s
+
+Escort Ships:
+E[0]: 1936A-class Destroyer (EA) at (8.10, 0.89) | Impact Power: 0.08
+E[1]: Gabbiano-class Corvette (EB) at (4.22, 7.00) | Impact Power: 0.06
+E[2]: Matsu-class Destroyer (EC) at (9.91, 2.96) | Impact Power: 0.07
+E[3]: Matsu-class Destroyer (EC) at (3.82, 3.23) | Impact Power: 0.07
