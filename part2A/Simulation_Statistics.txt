@@ -1,52 +1,140 @@
 SIMULATION STATISTICS - PART 2-A
 ================================
 
-Random Seed       : 3
-Canvas Size       : 4.00
-Escort Ships      : 3
-Route Points      : 4
-Battleship        : USS Iowa (U)
-Vmax_B            : 56.84 m/s
-T_B               : 3.67 s
+Random Seed       : 5
+Canvas Size       : 7.00
+Escort Ships      : 6
+Route Points      : 8
+Battleship        : Sovetsky (S)
+Vmax_B            : 48.24 m/s
+T_B               : 3.14 s
 Strategy          : Closest Enemy First
 
 STEP 1
-Location: (0.04, 1.03)
+Location: (5.75, 6.76)
 Attack Order (Closest First):
-  1. E[1] (ED) - Distance: 1.83
-  2. E[0] (EB) - Distance: 3.54
-  3. E[2] (EE) - Distance: 4.42
+  1. E[0] (EE) - Distance: 2.32
+  2. E[1] (EB) - Distance: 3.83
+  3. E[4] (EB) - Distance: 5.06
+  4. E[3] (EA) - Distance: 5.44
+  5. E[2] (ED) - Distance: 5.72
+  6. E[5] (EE) - Distance: 7.27
 
-  t=3.67s : Fired at E[1] (ED) | distance 1.83 | flight time 0.046 s
-  t=11.02s : Fired at E[0] (EB) | distance 3.54 | flight time 0.088 s
-  t=18.37s : Fired at E[2] (EE) | distance 4.42 | flight time 0.110 s
+  t=3.14s : Fired at E[0] (EE) | distance 2.32 | flight time 0.068 s
+  t=9.42s : Fired at E[1] (EB) | distance 3.83 | flight time 0.112 s
+  t=15.70s : Fired at E[4] (EB) | distance 5.06 | flight time 0.148 s
+  t=21.98s : Fired at E[3] (EA) | distance 5.44 | flight time 0.159 s
+  t=28.25s : Fired at E[2] (ED) | distance 5.72 | flight time 0.168 s
+  t=34.53s : Fired at E[5] (EE) | distance 7.27 | flight time 0.213 s
 STEP 2
-Location: (0.16, 1.78)
+Location: (2.74, 2.62)
 Attack Order (Closest First):
-  1. E[1] (ED) - Distance: 1.99
-  2. E[0] (EB) - Distance: 3.52
-  3. E[2] (EE) - Distance: 3.96
+  1. E[2] (ED) - Distance: 0.84
+  2. E[4] (EB) - Distance: 0.87
+  3. E[3] (EA) - Distance: 0.89
+  4. E[5] (EE) - Distance: 2.21
+  5. E[0] (EE) - Distance: 3.72
+  6. E[1] (EB) - Distance: 4.26
 
-  t=3.67s : Fired at E[1] (ED) | distance 1.99 | flight time 0.050 s
-  t=11.02s : Fired at E[0] (EB) | distance 3.52 | flight time 0.088 s
-  t=18.37s : Fired at E[2] (EE) | distance 3.96 | flight time 0.098 s
+  t=3.14s : Fired at E[2] (ED) | distance 0.84 | flight time 0.025 s
+  t=9.42s : Fired at E[4] (EB) | distance 0.87 | flight time 0.026 s
+  t=15.70s : Fired at E[3] (EA) | distance 0.89 | flight time 0.026 s
+  t=21.98s : Fired at E[5] (EE) | distance 2.21 | flight time 0.065 s
+  t=28.25s : Fired at E[0] (EE) | distance 3.72 | flight time 0.109 s
+  t=34.53s : Fired at E[1] (EB) | distance 4.26 | flight time 0.125 s
 STEP 3
-Location: (0.70, 1.47)
+Location: (6.79, 3.34)
 Attack Order (Closest First):
-  1. E[1] (ED) - Distance: 1.37
-  2. E[0] (EB) - Distance: 2.93
-  3. E[2] (EE) - Distance: 3.63
+  1. E[2] (ED) - Distance: 4.17
+  2. E[0] (EE) - Distance: 4.40
+  3. E[4] (EB) - Distance: 4.67
+  4. E[3] (EA) - Distance: 4.90
+  5. E[5] (EE) - Distance: 5.55
+  6. E[1] (EB) - Distance: 5.97
 
-  t=3.67s : Fired at E[1] (ED) | distance 1.37 | flight time 0.034 s
-  t=11.02s : Fired at E[0] (EB) | distance 2.93 | flight time 0.073 s
-  t=18.37s : Fired at E[2] (EE) | distance 3.63 | flight time 0.090 s
+  t=3.14s : Fired at E[2] (ED) | distance 4.17 | flight time 0.122 s
+  t=9.42s : Fired at E[0] (EE) | distance 4.40 | flight time 0.129 s
+  t=15.70s : Fired at E[4] (EB) | distance 4.67 | flight time 0.137 s
+  t=21.98s : Fired at E[3] (EA) | distance 4.90 | flight time 0.144 s
+  t=28.25s : Fired at E[5] (EE) | distance 5.55 | flight time 0.163 s
+  t=34.53s : Fired at E[1] (EB) | distance 5.97 | flight time 0.175 s
 STEP 4
-Location: (0.24, 2.25)
+Location: (4.54, 0.11)
 Attack Order (Closest First):
-  1. E[1] (ED) - Distance: 2.23
-  2. E[0] (EB) - Distance: 3.60
-  3. E[2] (EE) - Distance: 3.72
+  1. E[2] (ED) - Distance: 2.34
+  2. E[5] (EE) - Distance: 2.58
+  3. E[3] (EA) - Distance: 3.84
+  4. E[4] (EB) - Distance: 3.94
+  5. E[0] (EE) - Distance: 6.23
+  6. E[1] (EB) - Distance: 7.18
 
-  t=3.67s : Fired at E[1] (ED) | distance 2.23 | flight time 0.055 s
-  t=11.02s : Fired at E[0] (EB) | distance 3.60 | flight time 0.090 s
-  t=18.37s : Fired at E[2] (EE) | distance 3.72 | flight time 0.093 s
+  t=3.14s : Fired at E[2] (ED) | distance 2.34 | flight time 0.068 s
+  t=9.42s : Fired at E[5] (EE) | distance 2.58 | flight time 0.076 s
+  t=15.70s : Fired at E[3] (EA) | distance 3.84 | flight time 0.113 s
+  t=21.98s : Fired at E[4] (EB) | distance 3.94 | flight time 0.116 s
+  t=28.25s : Fired at E[0] (EE) | distance 6.23 | flight time 0.183 s
+  t=34.53s : Fired at E[1] (EB) | distance 7.18 | flight time 0.210 s
+STEP 5
+Location: (3.29, 5.10)
+Attack Order (Closest First):
+  1. E[0] (EE) - Distance: 1.18
+  2. E[1] (EB) - Distance: 2.18
+  3. E[4] (EB) - Distance: 2.21
+  4. E[3] (EA) - Distance: 2.59
+  5. E[2] (ED) - Distance: 3.33
+  6. E[5] (EE) - Distance: 4.74
+
+  t=3.14s : Fired at E[0] (EE) | distance 1.18 | flight time 0.034 s
+  t=9.42s : Fired at E[1] (EB) | distance 2.18 | flight time 0.064 s
+  t=15.70s : Fired at E[4] (EB) | distance 2.21 | flight time 0.065 s
+  t=21.98s : Fired at E[3] (EA) | distance 2.59 | flight time 0.076 s
+  t=28.25s : Fired at E[2] (ED) | distance 3.33 | flight time 0.098 s
+  t=34.53s : Fired at E[5] (EE) | distance 4.74 | flight time 0.139 s
+STEP 6
+Location: (1.15, 3.85)
+Attack Order (Closest First):
+  1. E[4] (EB) - Distance: 1.15
+  2. E[3] (EA) - Distance: 1.20
+  3. E[2] (ED) - Distance: 2.71
+  4. E[1] (EB) - Distance: 3.05
+  5. E[0] (EE) - Distance: 3.36
+  6. E[5] (EE) - Distance: 3.42
+
+  t=3.14s : Fired at E[4] (EB) | distance 1.15 | flight time 0.034 s
+  t=9.42s : Fired at E[3] (EA) | distance 1.20 | flight time 0.035 s
+  t=15.70s : Fired at E[2] (ED) | distance 2.71 | flight time 0.079 s
+  t=21.98s : Fired at E[1] (EB) | distance 3.05 | flight time 0.089 s
+  t=28.25s : Fired at E[0] (EE) | distance 3.36 | flight time 0.098 s
+  t=34.53s : Fired at E[5] (EE) | distance 3.42 | flight time 0.100 s
+STEP 7
+Location: (0.06, 4.29)
+Attack Order (Closest First):
+  1. E[3] (EA) - Distance: 2.30
+  2. E[4] (EB) - Distance: 2.31
+  3. E[1] (EB) - Distance: 3.13
+  4. E[2] (ED) - Distance: 3.79
+  5. E[0] (EE) - Distance: 3.95
+  6. E[5] (EE) - Distance: 4.22
+
+  t=3.14s : Fired at E[3] (EA) | distance 2.30 | flight time 0.067 s
+  t=9.42s : Fired at E[4] (EB) | distance 2.31 | flight time 0.068 s
+  t=15.70s : Fired at E[1] (EB) | distance 3.13 | flight time 0.092 s
+  t=21.98s : Fired at E[2] (ED) | distance 3.79 | flight time 0.111 s
+  t=28.25s : Fired at E[0] (EE) | distance 3.95 | flight time 0.116 s
+  t=34.53s : Fired at E[5] (EE) | distance 4.22 | flight time 0.124 s
+STEP 8
+Location: (0.34, 6.32)
+Attack Order (Closest First):
+  1. E[1] (EB) - Distance: 1.66
+  2. E[0] (EE) - Distance: 3.15
+  3. E[4] (EB) - Distance: 3.57
+  4. E[3] (EA) - Distance: 3.75
+  5. E[2] (ED) - Distance: 5.21
+  6. E[5] (EE) - Distance: 6.02
+
+  t=3.14s : Fired at E[1] (EB) | distance 1.66 | flight time 0.049 s
+  t=9.42s : Fired at E[0] (EE) | distance 3.15 | flight time 0.092 s
+  t=15.70s : Fired at E[4] (EB) | distance 3.57 | flight time 0.105 s
+  t=21.98s : Fired at E[3] (EA) | distance 3.75 | flight time 0.110 s
+  t=28.25s : Fired at E[2] (ED) | distance 5.21 | flight time 0.153 s
+  t=34.53s : Fired at E[5] (EE) | distance 6.02 | flight time 0.176 s

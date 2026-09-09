@@ -1,7 +1,7 @@
 === INITIAL CONDITIONS (Part 1-B) ===
 Seed: 3
 Canvas Size (D): 4
-Escort Ships (N): 34
-Path Points (k): 4
+Escort Ships (N): 45
+Path Points (k): 3
 Selected Vessel: U (USS Iowa)
 Calculated Vmax_B: 155.15 m/s
