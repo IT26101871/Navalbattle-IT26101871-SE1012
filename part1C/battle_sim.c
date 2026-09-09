@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -75,12 +76,25 @@ double route_x[route_points];
         route_y[i] = ((double)rand() / RAND_MAX) * canvas_size;
     }
 save_initial_conditions(b, escorts, num_escorts, seed, canvas_size, route_points);
+
+
 FILE *stat_file = fopen("Simulation_Statistics.txt", "w");
+
 if (stat_file != NULL)
 {
-    fprintf(stat_file, "SIMULATION STATISTICS\n\n");
+    fprintf(stat_file, "SIMULATION STATISTICS\n");
+    fprintf(stat_file, "====================\n\n");
+    fprintf(stat_file, "Random Seed: %d\n", seed);
+    fprintf(stat_file, "Canvas Size: %.0f x %.0f\n", canvas_size, canvas_size);
+    fprintf(stat_file, "Escort Fleet: %d ships\n", num_escorts);
+    fprintf(stat_file, "Route Points: %d\n", route_points);
+    fprintf(stat_file, "Battleship: %s (%c)\n", b.name, b.notation);
+    fprintf(stat_file, "Maximum Velocity: %.2f m/s\n\n", b.vmax);
     fclose(stat_file);
 }
+
+
+
 printf("\n\n              NAVAL BATTLE SIMULATOR          \n");
     printf("                 Simulation Mode              \n\n");
     printf("Random Seed        : %d\n", seed);

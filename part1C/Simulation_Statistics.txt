@@ -1,2 +1,10 @@
 SIMULATION STATISTICS
+====================
+
+Random Seed: 2
+Canvas Size: 10 x 10
+Escort Fleet: 4 ships
+Route Points: 5
+Battleship: Richelieu (R)
+Maximum Velocity: 148.50 m/s
 
