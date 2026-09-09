@@ -1,0 +1,52 @@
+SIMULATION STATISTICS - PART 2-A
+================================
+
+Random Seed       : 3
+Canvas Size       : 4.00
+Escort Ships      : 3
+Route Points      : 4
+Battleship        : USS Iowa (U)
+Vmax_B            : 56.84 m/s
+T_B               : 3.67 s
+Strategy          : Closest Enemy First
+
+STEP 1
+Location: (0.04, 1.03)
+Attack Order (Closest First):
+  1. E[1] (ED) - Distance: 1.83
+  2. E[0] (EB) - Distance: 3.54
+  3. E[2] (EE) - Distance: 4.42
+
+  t=3.67s : Fired at E[1] (ED) | distance 1.83 | flight time 0.046 s
+  t=11.02s : Fired at E[0] (EB) | distance 3.54 | flight time 0.088 s
+  t=18.37s : Fired at E[2] (EE) | distance 4.42 | flight time 0.110 s
+STEP 2
+Location: (0.16, 1.78)
+Attack Order (Closest First):
+  1. E[1] (ED) - Distance: 1.99
+  2. E[0] (EB) - Distance: 3.52
+  3. E[2] (EE) - Distance: 3.96
+
+  t=3.67s : Fired at E[1] (ED) | distance 1.99 | flight time 0.050 s
+  t=11.02s : Fired at E[0] (EB) | distance 3.52 | flight time 0.088 s
+  t=18.37s : Fired at E[2] (EE) | distance 3.96 | flight time 0.098 s
+STEP 3
+Location: (0.70, 1.47)
+Attack Order (Closest First):
+  1. E[1] (ED) - Distance: 1.37
+  2. E[0] (EB) - Distance: 2.93
+  3. E[2] (EE) - Distance: 3.63
+
+  t=3.67s : Fired at E[1] (ED) | distance 1.37 | flight time 0.034 s
+  t=11.02s : Fired at E[0] (EB) | distance 2.93 | flight time 0.073 s
+  t=18.37s : Fired at E[2] (EE) | distance 3.63 | flight time 0.090 s
+STEP 4
+Location: (0.24, 2.25)
+Attack Order (Closest First):
+  1. E[1] (ED) - Distance: 2.23
+  2. E[0] (EB) - Distance: 3.60
+  3. E[2] (EE) - Distance: 3.72
+
+  t=3.67s : Fired at E[1] (ED) | distance 2.23 | flight time 0.055 s
+  t=11.02s : Fired at E[0] (EB) | distance 3.60 | flight time 0.090 s
+  t=18.37s : Fired at E[2] (EE) | distance 3.72 | flight time 0.093 s

@@ -1,0 +1,7 @@
+INITIAL CONDITIONS
+Battleship: USS Iowa
+Vmax: 56.84
+T_B: 3.67
+E[0]: EB (3.58, 0.92)
+E[1]: ED (1.84, 0.71)
+E[2]: EE (3.78, 3.38)

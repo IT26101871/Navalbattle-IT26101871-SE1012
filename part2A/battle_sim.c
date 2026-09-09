@@ -94,7 +94,7 @@ int main() {
     printf("|  R   | Richelieu                        |\n");
     printf("|  S   | Sovetsky                         |\n");
     printf("+------+----------------------------------+\n");
-    printf("[SETUP] Choose battleship type (U/M/R/S)  : ");
+    printf(" Choose battleship type (U/M/R/S)  : ");
     scanf(" %c", &b_type);
 
         srand(seed);
@@ -102,7 +102,7 @@ int main() {
     Battleship b;
     initialize_battleship(&b, b_type);
 
-    printf("\n[SETUP] Enter Vmax_B (0=random)           : ");
+    printf("\n Enter Vmax_B (0=random)           : ");
     if (scanf("%lf", &input_vmax) != 1 || input_vmax == 0) {
         b.vmax = 40.0 + ((double)rand() / RAND_MAX) * 30.0;
     } else {
@@ -151,6 +151,41 @@ int main() {
         route_y[i] = ((double)rand() / RAND_MAX) * canvas_size;
     }
 
+FILE *initial_file = fopen("Initial_Conditions.txt", "w");
+
+fprintf(initial_file, "INITIAL CONDITIONS\n");
+fprintf(initial_file, "Battleship: %s\n", b.name);
+fprintf(initial_file, "Vmax: %.2f\n", b.vmax);
+fprintf(initial_file, "T_B: %.2f\n", b.reload_time);
+
+for (int i = 0; i < num_escorts; i++)
+    fprintf(initial_file, "E[%d]: %s (%.2f, %.2f)\n",
+            i, escorts[i].type_code, escorts[i].x, escorts[i].y);
+
+fclose(initial_file);
+
+
+
+FILE *stat_file = fopen("Simulation_Statistics.txt", "w");
+
+if (stat_file == NULL) {
+    printf("Error: Could not create Simulation_Statistics.txt\n");
+    return 1;
+}
+
+fprintf(stat_file, "SIMULATION STATISTICS - PART 2-A\n");
+fprintf(stat_file, "================================\n\n");
+fprintf(stat_file, "Random Seed       : %d\n", seed);
+fprintf(stat_file, "Canvas Size       : %.2f\n", canvas_size);
+fprintf(stat_file, "Escort Ships      : %d\n", num_escorts);
+fprintf(stat_file, "Route Points      : %d\n", route_points);
+fprintf(stat_file, "Battleship        : %s (%c)\n", b.name, b.notation);
+fprintf(stat_file, "Vmax_B            : %.2f m/s\n", b.vmax);
+fprintf(stat_file, "T_B               : %.2f s\n", b.reload_time);
+fprintf(stat_file, "Strategy          : Closest Enemy First\n\n");
+
+
+
     printf("\n====SIMULATION IN PROGRESS===========\n\n");
     printf("Strategy     : B attacks closest enemy first\n");
     printf("Reload Time  : %.2f s\n\n", b.reload_time);
@@ -164,7 +199,7 @@ int main() {
         printf("Location     : (%.2f, %.2f)\n", b.x, b.y);
         printf("Health       : %.1f%%\n", b.health);
 
-        if (step == 0) {
+        {
             int order[num_escorts];
             double dists[num_escorts];
 
@@ -185,9 +220,25 @@ int main() {
             }
 
             printf("\nAttack Order (Closest First):\n");
-            for (int i = 0; i < num_escorts; i++) {
-                printf("  %d. E[%d]\n", i + 1, order[i]);
-            }
+
+fprintf(stat_file, "STEP %d\n", step + 1);
+fprintf(stat_file, "Location: (%.2f, %.2f)\n", b.x, b.y);
+fprintf(stat_file, "Attack Order (Closest First):\n");
+
+for (int i = 0; i < num_escorts; i++) {
+    printf("  %d. E[%d]\n", i + 1, order[i]);
+
+    fprintf(stat_file,
+            "  %d. E[%d] (%s) - Distance: %.2f\n",
+            i + 1,
+            order[i],
+            escorts[order[i]].type_code,
+            dists[order[i]]);
+}
+
+fprintf(stat_file, "\n");
+            
+                       
 
             printf("\nTarget Engagements:\n");
             double current_t = b.reload_time;
@@ -197,8 +248,18 @@ int main() {
                 double dist = dists[idx];
                 double flight = dist / (b.vmax * cos(45.0 * M_PI / 180.0));
 
-                printf("  t=%.2fs  : Fired at E[%d] (%s) | distance %.1f | flight time %.3f s\n",
+               printf("  t=%.2fs  : Fired at E[%d] (%s) | distance %.1f | flight time %.3f s\n",
                        current_t, idx, escorts[idx].type_code, dist, flight);
+fprintf(stat_file,
+        "  t=%.2fs : Fired at E[%d] (%s) | distance %.2f | flight time %.3f s\n",
+        current_t,
+        idx,
+        escorts[idx].type_code,
+        dist,
+        flight);
+
+current_t += b.reload_time;
+
 
                 current_t += b.reload_time;
             }
@@ -212,6 +273,15 @@ int main() {
     printf("Battleship   : %s\n", (b.health > 0) ? "SURVIVED" : "DESTROYED");
     printf("Final Health : %.1f%%\n\n", b.health);
 
+FILE *final_file = fopen("Final_Conditions.txt", "w");
+
+fprintf(final_file, "FINAL CONDITIONS\n");
+fprintf(final_file, "Battleship: %s\n", b.name);
+fprintf(final_file, "Health: %.1f%%\n", b.health);
+
+fclose(final_file);
+
+
     printf("Files Saved:\n");
     printf("  - Initial_Conditions.txt\n");
     printf("  - Simulation_Statistics.txt\n");
@@ -220,6 +290,8 @@ int main() {
     printf("Press ENTER to exit...");
     getchar();
     getchar();
+
+fclose(stat_file);
 
     return 0;
 }
