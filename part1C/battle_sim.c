@@ -76,7 +76,11 @@ double route_x[route_points];
     }
 save_initial_conditions(b, escorts, num_escorts, seed, canvas_size, route_points);
 FILE *stat_file = fopen("Simulation_Statistics.txt", "w");
-    if (stat_file) fclose(stat_file);
+if (stat_file != NULL)
+{
+    fprintf(stat_file, "SIMULATION STATISTICS\n\n");
+    fclose(stat_file);
+}
 printf("\n\n              NAVAL BATTLE SIMULATOR          \n");
     printf("                 Simulation Mode              \n\n");
     printf("Random Seed        : %d\n", seed);
