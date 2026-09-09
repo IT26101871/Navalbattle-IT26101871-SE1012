@@ -2,10 +2,10 @@ PART 2-B SIMULATION STATISTICS
 ===============================
 
 Seed: 6
-Canvas Size: 8
-Escort Count: 67
+Canvas Size: 7
+Escort Count: 45
 
-Battleship Type: R
+Battleship Type: M
 Vmax_B: 175.41 m/s
 T_B: 2.85 s
 
@@ -18,72 +18,50 @@ EE: 3.02 s
 
 COMBAT RESULTS
 ---------------
-[0.01s] Battleship engaged E[0] - Distance 2.14 m - DESTROYED
-[2.86s] Battleship engaged E[1] - Distance 2.14 m - DESTROYED
-[5.71s] Battleship engaged E[2] - Distance 2.14 m - DESTROYED
-[8.56s] Battleship engaged E[3] - Distance 2.14 m - DESTROYED
-[11.41s] Battleship engaged E[4] - Distance 2.14 m - DESTROYED
-[14.26s] Battleship engaged E[5] - Distance 2.14 m - DESTROYED
-[17.11s] Battleship engaged E[6] - Distance 2.14 m - DESTROYED
-[19.96s] Battleship engaged E[7] - Distance 2.14 m - DESTROYED
-[22.81s] Battleship engaged E[8] - Distance 2.14 m - DESTROYED
-[25.66s] Battleship engaged E[9] - Distance 2.14 m - DESTROYED
-[28.51s] Battleship engaged E[10] - Distance 2.14 m - DESTROYED
-[31.36s] Battleship engaged E[11] - Distance 2.14 m - DESTROYED
-[34.21s] Battleship engaged E[12] - Distance 2.14 m - DESTROYED
-[37.06s] Battleship engaged E[13] - Distance 2.14 m - DESTROYED
-[39.91s] Battleship engaged E[14] - Distance 2.14 m - DESTROYED
-[42.76s] Battleship engaged E[15] - Distance 2.14 m - DESTROYED
-[45.61s] Battleship engaged E[16] - Distance 2.14 m - DESTROYED
-[48.46s] Battleship engaged E[17] - Distance 2.14 m - DESTROYED
-[51.31s] Battleship engaged E[18] - Distance 2.14 m - DESTROYED
-[54.16s] Battleship engaged E[19] - Distance 2.14 m - DESTROYED
-[57.01s] Battleship engaged E[20] - Distance 2.14 m - DESTROYED
-[59.86s] Battleship engaged E[21] - Distance 2.14 m - DESTROYED
-[62.71s] Battleship engaged E[22] - Distance 2.14 m - DESTROYED
-[65.56s] Battleship engaged E[23] - Distance 2.14 m - DESTROYED
-[68.41s] Battleship engaged E[24] - Distance 2.14 m - DESTROYED
-[71.26s] Battleship engaged E[25] - Distance 2.14 m - DESTROYED
-[74.11s] Battleship engaged E[26] - Distance 2.14 m - DESTROYED
-[76.96s] Battleship engaged E[27] - Distance 2.14 m - DESTROYED
-[79.81s] Battleship engaged E[28] - Distance 2.14 m - DESTROYED
-[82.66s] Battleship engaged E[29] - Distance 2.14 m - DESTROYED
-[85.51s] Battleship engaged E[30] - Distance 2.14 m - DESTROYED
-[88.36s] Battleship engaged E[31] - Distance 2.14 m - DESTROYED
-[91.21s] Battleship engaged E[32] - Distance 2.14 m - DESTROYED
-[94.06s] Battleship engaged E[33] - Distance 2.14 m - DESTROYED
-[96.91s] Battleship engaged E[34] - Distance 2.14 m - DESTROYED
-[99.76s] Battleship engaged E[35] - Distance 2.14 m - DESTROYED
-[102.61s] Battleship engaged E[36] - Distance 2.14 m - DESTROYED
-[105.46s] Battleship engaged E[37] - Distance 2.14 m - DESTROYED
-[108.31s] Battleship engaged E[38] - Distance 2.14 m - DESTROYED
-[111.16s] Battleship engaged E[39] - Distance 2.14 m - DESTROYED
-[114.01s] Battleship engaged E[40] - Distance 2.14 m - DESTROYED
-[116.86s] Battleship engaged E[41] - Distance 2.14 m - DESTROYED
-[119.71s] Battleship engaged E[42] - Distance 2.14 m - DESTROYED
-[122.56s] Battleship engaged E[43] - Distance 2.14 m - DESTROYED
-[125.41s] Battleship engaged E[44] - Distance 2.14 m - DESTROYED
-[128.26s] Battleship engaged E[45] - Distance 2.14 m - DESTROYED
-[131.11s] Battleship engaged E[46] - Distance 2.14 m - DESTROYED
-[133.96s] Battleship engaged E[47] - Distance 2.14 m - DESTROYED
-[136.81s] Battleship engaged E[48] - Distance 2.14 m - DESTROYED
-[139.66s] Battleship engaged E[49] - Distance 2.14 m - DESTROYED
-[142.51s] Battleship engaged E[50] - Distance 2.14 m - DESTROYED
-[145.36s] Battleship engaged E[51] - Distance 2.14 m - DESTROYED
-[148.21s] Battleship engaged E[52] - Distance 2.14 m - DESTROYED
-[151.06s] Battleship engaged E[53] - Distance 2.14 m - DESTROYED
-[153.91s] Battleship engaged E[54] - Distance 2.14 m - DESTROYED
-[156.76s] Battleship engaged E[55] - Distance 2.14 m - DESTROYED
-[159.61s] Battleship engaged E[56] - Distance 2.14 m - DESTROYED
-[162.46s] Battleship engaged E[57] - Distance 2.14 m - DESTROYED
-[165.31s] Battleship engaged E[58] - Distance 2.14 m - DESTROYED
-[168.16s] Battleship engaged E[59] - Distance 2.14 m - DESTROYED
-[171.01s] Battleship engaged E[60] - Distance 2.14 m - DESTROYED
-[173.86s] Battleship engaged E[61] - Distance 2.14 m - DESTROYED
-[176.71s] Battleship engaged E[62] - Distance 2.14 m - DESTROYED
-[179.56s] Battleship engaged E[63] - Distance 2.14 m - DESTROYED
-[182.41s] Battleship engaged E[64] - Distance 2.14 m - DESTROYED
-[185.26s] Battleship engaged E[65] - Distance 2.14 m - DESTROYED
-[188.11s] Battleship engaged E[66] - Distance 2.14 m - DESTROYED
+[0.01s] Battleship engaged E[0] - Distance 1.68 m - DESTROYED
+[2.86s] Battleship engaged E[1] - Distance 1.68 m - DESTROYED
+[5.71s] Battleship engaged E[2] - Distance 1.68 m - DESTROYED
+[8.56s] Battleship engaged E[3] - Distance 1.68 m - DESTROYED
+[11.41s] Battleship engaged E[4] - Distance 1.68 m - DESTROYED
+[14.26s] Battleship engaged E[5] - Distance 1.68 m - DESTROYED
+[17.11s] Battleship engaged E[6] - Distance 1.68 m - DESTROYED
+[19.96s] Battleship engaged E[7] - Distance 1.68 m - DESTROYED
+[22.81s] Battleship engaged E[8] - Distance 1.68 m - DESTROYED
+[25.66s] Battleship engaged E[9] - Distance 1.68 m - DESTROYED
+[28.51s] Battleship engaged E[10] - Distance 1.68 m - DESTROYED
+[31.36s] Battleship engaged E[11] - Distance 1.68 m - DESTROYED
+[34.21s] Battleship engaged E[12] - Distance 1.68 m - DESTROYED
+[37.06s] Battleship engaged E[13] - Distance 1.68 m - DESTROYED
+[39.91s] Battleship engaged E[14] - Distance 1.68 m - DESTROYED
+[42.76s] Battleship engaged E[15] - Distance 1.68 m - DESTROYED
+[45.61s] Battleship engaged E[16] - Distance 1.68 m - DESTROYED
+[48.46s] Battleship engaged E[17] - Distance 1.68 m - DESTROYED
+[51.31s] Battleship engaged E[18] - Distance 1.68 m - DESTROYED
+[54.16s] Battleship engaged E[19] - Distance 1.68 m - DESTROYED
+[57.01s] Battleship engaged E[20] - Distance 1.68 m - DESTROYED
+[59.86s] Battleship engaged E[21] - Distance 1.68 m - DESTROYED
+[62.71s] Battleship engaged E[22] - Distance 1.68 m - DESTROYED
+[65.56s] Battleship engaged E[23] - Distance 1.68 m - DESTROYED
+[68.41s] Battleship engaged E[24] - Distance 1.68 m - DESTROYED
+[71.26s] Battleship engaged E[25] - Distance 1.68 m - DESTROYED
+[74.11s] Battleship engaged E[26] - Distance 1.68 m - DESTROYED
+[76.96s] Battleship engaged E[27] - Distance 1.68 m - DESTROYED
+[79.81s] Battleship engaged E[28] - Distance 1.68 m - DESTROYED
+[82.66s] Battleship engaged E[29] - Distance 1.68 m - DESTROYED
+[85.51s] Battleship engaged E[30] - Distance 1.68 m - DESTROYED
+[88.36s] Battleship engaged E[31] - Distance 1.68 m - DESTROYED
+[91.21s] Battleship engaged E[32] - Distance 1.68 m - DESTROYED
+[94.06s] Battleship engaged E[33] - Distance 1.68 m - DESTROYED
+[96.91s] Battleship engaged E[34] - Distance 1.68 m - DESTROYED
+[99.76s] Battleship engaged E[35] - Distance 1.68 m - DESTROYED
+[102.61s] Battleship engaged E[36] - Distance 1.68 m - DESTROYED
+[105.46s] Battleship engaged E[37] - Distance 1.68 m - DESTROYED
+[108.31s] Battleship engaged E[38] - Distance 1.68 m - DESTROYED
+[111.16s] Battleship engaged E[39] - Distance 1.68 m - DESTROYED
+[114.01s] Battleship engaged E[40] - Distance 1.68 m - DESTROYED
+[116.86s] Battleship engaged E[41] - Distance 1.68 m - DESTROYED
+[119.71s] Battleship engaged E[42] - Distance 1.68 m - DESTROYED
+[122.56s] Battleship engaged E[43] - Distance 1.68 m - DESTROYED
+[125.41s] Battleship engaged E[44] - Distance 1.68 m - DESTROYED
 
-Total Battle Time: 188.112 seconds
+Total Battle Time: 125.410 seconds

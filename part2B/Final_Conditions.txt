@@ -3,5 +3,5 @@ PART 2-B FINAL BATTLE REPORT
 
 Flagship Combat Status      : SURVIVED
 Remaining Hull Integrity    : 100.00%
-Escort Targets Neutralized  : 67 / 67
-Total Engagement Duration   : 188.112 seconds
+Escort Targets Neutralized  : 45 / 45
+Total Engagement Duration   : 125.410 seconds

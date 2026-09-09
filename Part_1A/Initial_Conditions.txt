@@ -1,8 +1,8 @@
 === INITIAL CONDITIONS ===
-Battleship: Richelieu | Pos: (1.47, 2.10) | Vmax: 183.29
-E[1] EC | Pos: (2.86, 2.36)
-E[2] EE | Pos: (3.41, 5.58)
-E[3] EB | Pos: (3.27, 7.51)
-E[4] EE | Pos: (1.74, 8.24)
-E[5] EA | Pos: (7.69, 3.10)
-E[6] EE | Pos: (0.62, 5.04)
+Battleship: Richelieu | Pos: (1.12, 1.97) | Vmax: 112.28
+E[1] EA | Pos: (2.22, 1.43)
+E[2] EE | Pos: (1.15, 0.02)
+E[3] EA | Pos: (4.23, 0.05)
+E[4] ED | Pos: (1.83, 0.29)
+E[5] ED | Pos: (2.61, 1.03)
+E[6] EB | Pos: (0.82, 1.06)
