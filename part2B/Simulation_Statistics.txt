@@ -3,7 +3,7 @@ PART 2-B SIMULATION STATISTICS
 
 Seed: 6
 Canvas Size: 7
-Escort Count: 45
+Escort Count: 56
 
 Battleship Type: M
 Vmax_B: 175.41 m/s
@@ -63,5 +63,16 @@ COMBAT RESULTS
 [119.71s] Battleship engaged E[42] - Distance 1.68 m - DESTROYED
 [122.56s] Battleship engaged E[43] - Distance 1.68 m - DESTROYED
 [125.41s] Battleship engaged E[44] - Distance 1.68 m - DESTROYED
+[128.26s] Battleship engaged E[45] - Distance 1.68 m - DESTROYED
+[131.11s] Battleship engaged E[46] - Distance 1.68 m - DESTROYED
+[133.96s] Battleship engaged E[47] - Distance 1.68 m - DESTROYED
+[136.81s] Battleship engaged E[48] - Distance 1.68 m - DESTROYED
+[139.66s] Battleship engaged E[49] - Distance 1.68 m - DESTROYED
+[142.51s] Battleship engaged E[50] - Distance 1.68 m - DESTROYED
+[145.36s] Battleship engaged E[51] - Distance 1.68 m - DESTROYED
+[148.21s] Battleship engaged E[52] - Distance 1.68 m - DESTROYED
+[151.06s] Battleship engaged E[53] - Distance 1.68 m - DESTROYED
+[153.91s] Battleship engaged E[54] - Distance 1.68 m - DESTROYED
+[156.76s] Battleship engaged E[55] - Distance 1.68 m - DESTROYED
 
-Total Battle Time: 125.410 seconds
+Total Battle Time: 156.760 seconds

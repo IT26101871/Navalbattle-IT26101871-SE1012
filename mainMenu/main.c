@@ -14,7 +14,7 @@ int main() {
         showMenu();
         printf("Enter your choice (1-4): ");
         if (scanf("%d", &choice) != 1) {
-            while (getchar() != '\n'); // Clear invalid input
+            while (getchar() != '\n'); 
             continue;
         }
 
@@ -63,7 +63,7 @@ void startSimulationMenu() {
     scanf("%d", &partChoice);
 
     switch (partChoice) {
-        case 1: system("cd part1A && ./battle_sim"); break;
+        case 1: system("cd Part_1A && ./battle_sim"); break;
         case 2: system("cd part1B && ./battle_sim"); break;
         case 3: system("cd part1C && ./battle_sim"); break;
         case 4: system("cd part2A && ./battle_sim"); break;
@@ -86,20 +86,53 @@ void viewInstructions() {
 }
 
 void viewStatisticsMenu() {
-    int statChoice;
-    printf("\n--- VIEW SIMULATION LOGS ---\n");
-    printf("1. Part 2B - Initial Conditions\n");
-    printf("2. Part 2B - Simulation Statistics\n");
-    printf("3. Part 2B - Final Conditions\n");
-    printf("Select File to View: ");
+     printf("\n--- VIEW SIMULATION LOGS ---\n");
+    void viewStatisticsMenu() ;
+    int partChoice, statChoice;
+    char filepath[100];
+    char folder[10];
+    char filename[30];
+
+    printf("\n--- SELECT SIMULATION PART ---\n");
+    printf("1. Part 1-A\n");
+    printf("2. Part 1-B\n");
+    printf("3. Part 1-C\n");
+    printf("4. Part 2-A\n");
+    printf("5. Part 2-B\n");
+    printf("6. Part 2-C\n");
+    printf("Select Part (1-6): ");
+    scanf("%d", &partChoice);
+
+    printf("\n--- SELECT LOG FILE ---\n");
+    printf("1. Initial Conditions\n");
+    printf("2. Simulation Statistics\n");
+    printf("3. Final Conditions\n");
+    printf("Select File (1-3): ");
     scanf("%d", &statChoice);
 
-    switch (statChoice) {
-        case 1: readTextFile("part2B/Initial_Conditions.txt"); break;
-        case 2: readTextFile("part2B/Simulation_Statistics.txt"); break;
-        case 3: readTextFile("part2B/Final_Conditions.txt"); break;
-        default: printf("Invalid choice!\n");
+    switch (partChoice) {
+        case 1: sprintf(folder, "Part_1A"); break;
+        case 2: sprintf(folder, "part1B"); break;
+        case 3: sprintf(folder, "part1C"); break;
+        case 4: sprintf(folder, "part2A"); break;
+        case 5: sprintf(folder, "part2B"); break;
+        case 6: sprintf(folder, "part2C"); break;
+        default:
+            printf("\nInvalid Part choice!\n");
+            return;
     }
+
+    switch (statChoice) {
+        case 1: sprintf(filename, "Initial_Conditions.txt"); break;
+        case 2: sprintf(filename, "Simulation_Statistics.txt"); break;
+        case 3: sprintf(filename, "Final_Conditions.txt"); break;
+        default:
+            printf("\nInvalid File choice!\n");
+            return;
+    }
+
+    sprintf(filepath, "%s/%s", folder, filename);
+    readTextFile(filepath);
 }
 
 void readTextFile(const char *filepath) {

@@ -2,7 +2,7 @@ PART 2-B INITIAL CONDITIONS
 ============================
 Seed: 6
 Canvas Size: 7
-Escort Count: 45
+Escort Count: 56
 Battleship Type: M
 Vmax_B: 175.41 m/s
 T_B: 2.85 s

@@ -2,7 +2,7 @@ INITIAL CONDITIONS
 Random Seed: 2
 Canvas Size: 10x10
 Route Points: 5
-Battleship: Richelieu (R), Vmax: 148.50 m/s
+Battleship: USS Iowa (U), Vmax: 155.15 m/s
 
 Escort Ships:
 E[0]: 1936A-class Destroyer (EA) at (8.10, 0.89) | Impact Power: 0.08
