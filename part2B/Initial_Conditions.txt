@@ -1,0 +1,16 @@
+PART 2-B INITIAL CONDITIONS
+============================
+Seed: 5
+Canvas Size: 4
+Escort Count: 56
+Battleship Type: R
+Vmax_B: 166.75 m/s
+T_B: 2.65 s
+Position: (0.10, 0.72)
+
+Escort Reload Times:
+EA: 3.76 s
+EB: 4.32 s
+EC: 5.20 s
+ED: 5.49 s
+EE: 3.73 s

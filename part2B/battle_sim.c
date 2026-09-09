@@ -102,7 +102,35 @@ int main() {
     if (te_ee_input == 0) printf(" --> [CALC] T_E^EE = %.2f s\n\n", te_ee);
 
     printf("[EVENT] Deploying %d escort units onto canvas grid... [SUCCESS]\n", escort_count);
+    FILE *initialFile = fopen("Initial_Conditions.txt", "w");
+
+if (initialFile != NULL)
+{
+    fprintf(initialFile, "PART 2-B INITIAL CONDITIONS\n");
+    fprintf(initialFile, "============================\n");
+    fprintf(initialFile, "Seed: %d\n", seed);
+    fprintf(initialFile, "Canvas Size: %d\n", canvas_size);
+    fprintf(initialFile, "Escort Count: %d\n", escort_count);
+    fprintf(initialFile, "Battleship Type: %c\n", ship_type);
+    fprintf(initialFile, "Vmax_B: %.2f m/s\n", vmax_b);
+    fprintf(initialFile, "T_B: %.2f s\n", tb);
+    fprintf(initialFile, "Position: (%.2f, %.2f)\n", pos_x, pos_y);
+
+    fprintf(initialFile, "\nEscort Reload Times:\n");
+    fprintf(initialFile, "EA: %.2f s\n", te_ea);
+    fprintf(initialFile, "EB: %.2f s\n", te_eb);
+    fprintf(initialFile, "EC: %.2f s\n", te_ec);
+    fprintf(initialFile, "ED: %.2f s\n", te_ed);
+    fprintf(initialFile, "EE: %.2f s\n", te_ee);
+
+    fclose(initialFile);
+
     printf("[FILE]  Initial state records saved to -> Initial_Conditions.txt\n\n");
+}
+else
+{
+    printf("[ERROR] Could not create Initial_Conditions.txt\n\n");
+}
 
     
     distance = sqrt(pow(pos_x - escort_x, 2) + pow(pos_y - escort_y, 2)); 
@@ -121,6 +149,57 @@ int main() {
     }
     printf("===============================================================================\n\n");
 
+FILE *statsFile = fopen("Simulation_Statistics.txt", "w");
+
+if (statsFile != NULL)
+{
+    fprintf(statsFile, "PART 2-B SIMULATION STATISTICS\n");
+    fprintf(statsFile, "===============================\n\n");
+
+    fprintf(statsFile, "Seed: %d\n", seed);
+    fprintf(statsFile, "Canvas Size: %d\n", canvas_size);
+    fprintf(statsFile, "Escort Count: %d\n", escort_count);
+
+    fprintf(statsFile, "\nBattleship Type: %c\n", ship_type);
+    fprintf(statsFile, "Vmax_B: %.2f m/s\n", vmax_b);
+    fprintf(statsFile, "T_B: %.2f s\n", tb);
+
+    fprintf(statsFile, "\nEscort Reload Times:\n");
+    fprintf(statsFile, "EA: %.2f s\n", te_ea);
+    fprintf(statsFile, "EB: %.2f s\n", te_eb);
+    fprintf(statsFile, "EC: %.2f s\n", te_ec);
+    fprintf(statsFile, "ED: %.2f s\n", te_ed);
+    fprintf(statsFile, "EE: %.2f s\n", te_ee);
+
+    fprintf(statsFile, "\nCOMBAT RESULTS\n");
+    fprintf(statsFile, "---------------\n");
+
+    for (int i = 0; i < escort_count; i++)
+    {
+        double attack_time = travel_time + (i * tb);
+
+        fprintf(statsFile,
+                "[%.2fs] Battleship engaged E[%d] - Distance %.2f m - DESTROYED\n",
+                attack_time,
+                i,
+                distance);
+    }
+
+    fprintf(statsFile, "\nTotal Battle Time: %.3f seconds\n",
+            total_time);
+
+    fclose(statsFile);
+
+    printf("[FILE]  Combat execution metrics saved to -> Simulation_Statistics.txt\n\n");
+}
+else
+{
+    printf("[ERROR] Could not create Simulation_Statistics.txt\n");
+}
+
+
+
+
     printf("[FILE]  Combat execution metrics saved to -> Simulation_Statistics.txt\n\n");
 
 
@@ -129,6 +208,41 @@ int main() {
     printf("  [DATA] Remaining Hull Integrity (HP)                : 100.00%%\n");
     printf("  [DATA] Escort Targets Neutralized                   : %d / %d\n", escort_count, escort_count);
     printf("  [DATA] Total Engagement Duration                    : %.3f seconds\n\n", total_time);
+
+
+
+FILE *finalFile = fopen("Final_Conditions.txt", "w");
+
+if (finalFile != NULL)
+{
+    fprintf(finalFile, "PART 2-B FINAL BATTLE REPORT\n");
+    fprintf(finalFile, "============================\n\n");
+
+    fprintf(finalFile,
+            "Flagship Combat Status      : SURVIVED\n");
+
+    fprintf(finalFile,
+            "Remaining Hull Integrity    : 100.00%%\n");
+
+    fprintf(finalFile,
+            "Escort Targets Neutralized  : %d / %d\n",
+            escort_count,
+            escort_count);
+
+    fprintf(finalFile,
+            "Total Engagement Duration   : %.3f seconds\n",
+            total_time);
+
+    fclose(finalFile);
+
+    printf("[FILE]  Final battlefield summary saved to -> Final_Conditions.txt\n\n");
+}
+else
+{
+    printf("[ERROR] Could not create Final_Conditions.txt\n");
+}
+
+
 
     printf("[FILE]  Final battlefield summary saved to -> Final_Conditions.txt\n\n");
 
